@@ -9,4 +9,6 @@ name = "pynnrs"
 crate-type = ["cdylib"]
 
 [dependencies]
+nalgebra = { version = "0.32.3", features = ["rand"] }
 pyo3 = "0.19.0"
+rand = "0.8.5"

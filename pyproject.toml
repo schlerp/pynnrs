@@ -1,6 +1,10 @@
-[build-system]
-requires = ["maturin>=1.1,<2.0"]
-build-backend = "maturin"
+[tool.poetry]
+name = "pynnrs"
+version = "0.1.0"
+description = "A python neiral network library implemented in rust"
+authors = ["PattyC <patrickcoffey91@gmail.com>"]
+license = "MIT"
+readme = "README.md"
 
 [project]
 name = "pynnrs"
@@ -11,6 +15,12 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 
+[tool.poetry.dependencies]
+python = "^3.7"
 
 [tool.maturin]
 features = ["pyo3/extension-module"]
+
+[build-system]
+requires = ["maturin>=1.1,<2.0"]
+build-backend = "maturin"
